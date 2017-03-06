@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="no-js" ng-app="app">
+<head>
+	<base href="/"/>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="author" content="@@meta.author" />
+	<meta name="msapplication-TileColor" content="#7FAD2C" />
+
+	<!-- start-html-prod-code -->
+	<meta name="robots" content="noindex">
+	<!-- end-html-prod-code -->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="img/favicons/manifest.json">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico">
+	<meta name="msapplication-TileImage" content="img/favicons/mstile-150x150.png" />
+	<link rel="icon" type="image/png" href="img/favicons/android-chrome-192x192.png" sizes="144x144" />
+	<meta name="msapplication-config" content="img/favicons/browserconfig.xml" />
+
+	<!-- start-html-debug-code -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
+	<!-- end-html-debug-code -->
+</head>
+<body>
+	<div ng-view autoscroll="true"></div>
+	<!-- start-html-debug-code -->
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="node_modules/ng-infinite-scroll/build/ng-infinite-scroll.min.js"></script>
+	<script src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+	<script src="node_modules/angular-route/angular-route.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/routes/routes.js"></script>
+	<script src="js/controllers/homeController.js"></script>
+	<script src="js/services/apiService.js"></script>
+	<script src="js/directives/directives.js"></script>
+	<!-- end-html-debug-code -->
+</body>
+</html>
