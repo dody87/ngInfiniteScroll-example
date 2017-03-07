@@ -13,11 +13,16 @@
     <div class="col-xs-6 col-sm-4 col-md-3" ng-repeat="pokemon in pokemons">
 			<div class="thumbnail">
 				<img ng-src="{{pokemon.img}}">
-				<div class="caption bg bg-info">
+				<div class="caption bg bg-info text-center">
 					<h3 class="text-info"><span ng-bind="pokemon.id"></span> <span ng-bind="pokemon.name"></span></h3>
 					<p>
 						<span class="label label-default">Rarity: <span ng-bind="pokemon.rarity"></span></span>
 						<span class="label label-primary">SubType: <span ng-bind="pokemon.subtype"></span></span>
+						<br>
+						<span class="label label-success">HP: <span ng-bind="pokemon.hp"></span></span>
+						<span class="label label-danger">Artist: <span ng-bind="pokemon.artist"></span></span>
+						<span class="label label-warning">Series: <span ng-bind="pokemon.set"></span></span>
+						<span class="label label-info">Series: <span ng-bind="pokemon.series"></span></span>
 					</p>
 				</div>
 			</div>
