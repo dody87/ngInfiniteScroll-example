@@ -16,7 +16,7 @@ app.factory('apiService', [
     };
 
     var _getPokemons = function(page){
-      return _get('cards?page='+page+'&pageSize=10');
+      return _get('cards?page='+page+'&pageSize=12');
     };
 
     return({
