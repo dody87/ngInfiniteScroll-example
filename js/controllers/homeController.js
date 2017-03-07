@@ -4,16 +4,26 @@ var homeController =[
   "$rootScope",
   "apiService",
   function($scope,$rootScope,apiService){
-    var topics = [
-      'home','opinion','world','national',
-      'politics','upshot','nyregion','business',
-      'technology','science','health','sports','arts',
-      'books','movies','theater','sundayreview','fashion',
-      'tmagazine','food','travel','magazine','realestate',
-      'automobiles','obituaries','insider'
-    ];
+    var Pokemon = class{
+      constructor(data){
+        this.id = data.nationalPokedexNumber;
+        this.name = data.name;
+        this.img = data.imageUrl;
+        this.subtype = data.subtype;
+        this.rarity = data.rarity;
+      }
+    };
+
     var init = function(){
-      //Include init funcitons here.
+      $scope.pokemons = [];
+
+      apiService.getPokemons().then(function(data){
+        console.log(data);
+        for (var i = 0; i < data.cards.length; i++) {
+          var item = data.cards[i]
+          $scope.pokemons.push(new Pokemon(item));
+        }
+      });
     };
     init();
   }

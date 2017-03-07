@@ -10,24 +10,17 @@
 </header>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="item in news">
-      <div class="card">
-          <div class="card-image">
-            <img class="img-responsive" ng-src="{{item.image}}">
-            <span class="card-title" ng-bind="item.title"></span>
-          </div>
-
-          <div class="card-content">
-            <p ng-bind="item.desc"></p>
-          </div>
-
-          <div class="card-action last">
-            <a ng-href="{{item.link}}" class="btn btn-primary btn-lg btn-block">
-              <span><span class="glyphicon glyphicon-tint"></span></span>
-              <span>Open</span>
-            </a>
-          </div>
-      </div>
-    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3" ng-repeat="pokemon in pokemons">
+			<div class="thumbnail">
+				<img ng-src="{{pokemon.img}}">
+				<div class="caption bg bg-info">
+					<h3 class="text-info"><span ng-bind="pokemon.id"></span> <span ng-bind="pokemon.name"></span></h3>
+					<p>
+						<span class="label label-default">Rarity: <span ng-bind="pokemon.rarity"></span></span>
+						<span class="label label-primary">SubType: <span ng-bind="pokemon.subtype"></span></span>
+					</p>
+				</div>
+			</div>
+		</div>
   </div>
 </div>
