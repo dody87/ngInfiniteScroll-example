@@ -43,7 +43,7 @@ var homeController =[
     var init = function(){
       $scope.end = false;
       $scope.pokemons = [];
-      $scope.getPokemons();//
+      //$scope.getPokemons();//
     };
 
     init();

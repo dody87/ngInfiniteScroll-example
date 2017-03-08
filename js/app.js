@@ -1,6 +1,6 @@
 "use strict";
 
-var app = angular.module("app", ["ngRoute","ngSanitize"/*,"infinite-scroll"*/]);
+var app = angular.module("app", ["ngRoute","ngSanitize","infinite-scroll"]);
 
 app.constant('CONFIG',{
   api:{
