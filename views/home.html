@@ -9,8 +9,8 @@
 	</div>
 </header>
 <div class="container">
-	<div class="row" infinite-scroll="getPokemons();" infinite-scroll-disabled='end' infinite-scroll-distance='1'>
-	<!--<div class="row">-->
+	<!--<div class="row" infinite-scroll="getPokemons();" infinite-scroll-disabled='end' infinite-scroll-distance='1'>-->
+	<div class="row">
     <div class="col-xs-6 col-sm-4 col-md-3" ng-repeat="pokemon in pokemons">
 			<div class="thumbnail">
 				<img ng-src="{{pokemon.img}}">
@@ -31,7 +31,7 @@
   </div>
 	<div class="row">
 	  <div class="col-xs-12 text-center">
-	    <!--<button ng-hide="end" type="button" class="btn btn-primary btn-block btn-lg" ng-click="getPokemons();"><span class="glyphicon glyphicon-refresh"></span> Load more</button>-->
+	    <button ng-hide="end" type="button" class="btn btn-primary btn-block btn-lg" ng-click="getPokemons();"><span class="glyphicon glyphicon-refresh"></span> Load more</button>
 			<button ng-show="end" type="button" class="btn btn-danger btn-block btn-lg" ng-click="scrollUp();"><span class="glyphicon glyphicon-arrow-up"></span> Scroll to up</button>
 	  </div>
 	</div>
